@@ -19,7 +19,7 @@ public class BasketController {
         return basketServicePort.saveBasket(bookDto);
     }
 
-    @PutMapping("/update")
+    @PutMapping("/admin/update")
     public BasketDto updateBook(@RequestBody BasketDto bookDto) {
         return basketServicePort.updateBasket(bookDto);
     }
@@ -29,7 +29,7 @@ public class BasketController {
         return basketServicePort.getBasketById(id);
     }
 
-    @GetMapping("/get")
+    @GetMapping("/admin/get")
     public List<BasketDto> getAllBooks() {
         return basketServicePort.getAllBasket();
     }
